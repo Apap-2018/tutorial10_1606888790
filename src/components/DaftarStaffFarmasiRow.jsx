@@ -8,6 +8,7 @@ export const DaftarStaffFarmasiRow = (props) => {
                 return (
                     <tr key={staffFarmasi.id}>
                         <td>{staffFarmasi.nama}</td>
+						<td>{staffFarmasi.jenis}</td>
                     </tr>
                 )
             })}

@@ -32,7 +32,7 @@ export class DaftarStaffFarmasi extends React.Component {
             )
         } else {
             return (
-                <TableContainer title="Daftar Staff Farmasi" header={['Nama Staff Farmasi']}>
+                <TableContainer title="Daftar Staff Farmasi" header={['Nama Staff Farmasi', 'Jenis Staff']}>
                     <DaftarStaffFarmasiRow listStaffFarmasi={this.state.listStaffFarmasi}/>
                 </TableContainer>
             )

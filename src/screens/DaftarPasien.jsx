@@ -9,7 +9,6 @@ export class DaftarPasien extends React.Component {
 	 * Akses method getAllPasien() pada Appointment dan lakukan update state. 
 	 * Lakukan pemanggilan pada constructor() atau pada lifecycle componentDidMount()
 	 */
-
 	constructor(props) {
 		super(props)
 		this.state = {
@@ -32,7 +31,7 @@ export class DaftarPasien extends React.Component {
             )
         } else {
             return (
-                <TableContainer title="Daftar Pasien" header={['Nama Pasien', 'Status Pasien', 'Aksi']}>
+                <TableContainer title="Daftar Pasien" header={['Nama Pasien', 'Status Pasien', 'Aksi', 'Hasil Lab']}>
                     <DaftarPasienRow listPasien={this.state.listPasien}/>
                 </TableContainer>
             )

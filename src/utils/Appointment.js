@@ -72,4 +72,25 @@ export const Appointment = {
 			return jsonResponse
 		})
 	},
+	
+	/** 
+	 * POST data hasil lab ke SI-Appointment
+	 * @param requestBody
+	 * @return responseRequest
+	 */
+	addLabResult(requestBody) {
+		return fetch(`${cors}${baseUrl}/1/addLabResult`, {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json'
+			},
+			body: JSON.stringify(requestBody)
+		})
+		.then(response => {
+			return response.json()
+		})
+		.then(jsonResponse => {
+			return jsonResponse
+		})
+	}
 }

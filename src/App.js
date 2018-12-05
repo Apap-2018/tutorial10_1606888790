@@ -6,6 +6,8 @@ import { Home } from './screens/Home';
 import { NotFound } from './screens/NotFound';
 import { UpdatePasien } from './screens/UpdatePasien';
 import { DaftarStaffFarmasi } from './screens/DaftarStaffFarmasi';
+import { AddLabResult } from './screens/AddLabResult';
+
 
 export class App extends React.Component {
 	render() {
@@ -38,6 +40,7 @@ export class App extends React.Component {
 							<Route path="/all-staff-farmasi" exact component={DaftarStaffFarmasi} />
 							<Route path="/update-pasien/:id" exact component={UpdatePasien} />
 							<Route path="/not-found" exact component={NotFound} />
+							<Route path="/add-lab-result/:id" exact component={AddLabResult} />
 							<Route component={NotFound} />
 						</Switch>
 					</div>
