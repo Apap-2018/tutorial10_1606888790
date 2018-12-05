@@ -55,5 +55,21 @@ export const Appointment = {
 		.then(jsonResponse => {
 			return jsonResponse
 		})
-	}
+	},
+	
+	/** 
+	 * Fetch data all staf
+	 * @return listAllStaf
+	 */
+	getAllStaffFarmasi() {
+		return fetch(`${cors}${baseUrl}/1/getAllStaffFarmasi`, {
+			method: 'GET',
+		})
+		.then(response => {
+			return response.json()
+		})
+		.then(jsonResponse => {
+			return jsonResponse
+		})
+	},
 }
